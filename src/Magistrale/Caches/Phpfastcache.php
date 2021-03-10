@@ -1,4 +1,4 @@
-<?php namespace Infrastructure\Caches;
+<?php namespace Magistrale\Caches;
 
 use Phpfastcache\Core\Pool\ExtendedCacheItemPoolInterface;
 use Phpfastcache\Core\Item\ExtendedCacheItemInterface;

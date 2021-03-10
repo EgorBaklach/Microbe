@@ -1,11 +1,11 @@
-<?php namespace Infrastructure\Databases;
+<?php namespace Magistrale\Databases;
 
 use Molecule\ORM;
 use Molecule\ORMFactory;
 
 /**
  * Class ORMDatabase
- * @package Infrastructure\Databases
+ * @package Magistrale\Databases
  * @property ORM medias
  */
 class ORMDatabase extends ORMFactory

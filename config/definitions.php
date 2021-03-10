@@ -5,7 +5,7 @@ use Framework\Handlers\ErrorResponseHandler;
 use Framework\Routers\LeagueRouter;
 use Framework\Strategies\ApplicationStrategy;
 use Framework\Templates\Plates;
-use Infrastructure\Caches\Phpfastcache;
+use Magistrale\Caches\Phpfastcache;
 use League\Container\Definition\{Definition, DefinitionAggregate};
 use Phpfastcache\Drivers\Memcached\Config;
 

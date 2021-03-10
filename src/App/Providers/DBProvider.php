@@ -1,7 +1,7 @@
 <?php namespace App\Providers;
 
 use Framework\Providers\ProviderAbstract;
-use Infrastructure\Databases\ORMDatabase;
+use Magistrale\Databases\ORMDatabase;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
 
 class DBProvider extends ProviderAbstract implements BootableServiceProviderInterface
