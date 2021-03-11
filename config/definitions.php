@@ -1,5 +1,6 @@
 <?php
 
+use App\Extensions\AssetRender;
 use Framework\Emitters\SapiEmitter;
 use Framework\Handlers\ErrorResponseHandler;
 use Framework\Routers\LeagueRouter;
@@ -18,14 +19,8 @@ return new DefinitionAggregate([
         'router' => LeagueRouter::class,
         'cache' => Phpfastcache::class
     ]),
-    new Definition('cache', [
-        'Memcached',
-        Config::class
-    ]),
-    new Definition('template', [
-        'templates',
-        'php'
-    ]),
+    new Definition('cache', ['Memcached', Config::class]),
+    new Definition('template', ['templates', 'php', [new AssetRender('public')]]),
     new Definition('databases', [
         'database' => [
             "host" => "localhost",

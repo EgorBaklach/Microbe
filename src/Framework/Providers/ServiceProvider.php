@@ -34,7 +34,7 @@ class ServiceProvider extends ProviderAbstract implements BootableServiceProvide
 
         $this->container()
             ->add(TemplateInterface::class, $this->dependencies['template'])
-            ->addArguments($this->template);
+            ->addMethodCall('init', $this->template);
 
         $this->container()
             ->add(ErrorHandlerInterface::class, $this->dependencies['handler'])

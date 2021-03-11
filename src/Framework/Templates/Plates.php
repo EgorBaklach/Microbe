@@ -8,9 +8,16 @@ class Plates implements TemplateInterface
     /** @var Engine  */
     private $engine;
 
-    public function __construct($path, $extension = 'php')
+    public function __construct()
     {
-        $this->engine = new Engine($path, $extension);
+        $this->engine = new Engine();
+    }
+
+    public function init(string $path, string $extension = 'php', array $extensions = [])
+    {
+        $this->engine->setDirectory($path);
+        $this->engine->setFileExtension($extension);
+        $this->engine->loadExtensions($extensions);
     }
 
     public function render($name, array $params = []): string
