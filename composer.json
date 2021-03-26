@@ -13,12 +13,14 @@
     "laminas/laminas-config-aggregator": "1.4.0",
     "phpfastcache/phpfastcache": "8.0.4",
     "egorbaklach/contracts": "1.2",
-    "egorbaklach/molecule": "1.1",
+    "egorbaklach/molecule": "1.2",
+    "symfony/console": "5.2.5",
     "ext-pdo": "*"
   },
   "autoload": {
     "psr-4": {
       "App\\": "src/App",
+      "Cli\\": "src/Cli",
       "Framework\\": "src/Framework",
       "Magistrale\\": "src/Magistrale"
     }

@@ -1,5 +1,6 @@
 <?php namespace Framework;
 
+use Cli\Console\ConsoleInterface;
 use Contracts\Emitter\EmitterInterface;
 use League\Container\Container;
 use League\Container\Definition\DefinitionAggregateInterface;
@@ -25,5 +26,10 @@ class Application
     public function run()
     {
         $this->container->delegate(new ReflectionContainer)->get(EmitterInterface::class);
+    }
+
+    public function cli()
+    {
+        $this->container->delegate(new ReflectionContainer)->get(ConsoleInterface::class)->run();
     }
 }
