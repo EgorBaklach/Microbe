@@ -13,7 +13,7 @@
     "laminas/laminas-config-aggregator": "1.4.0",
     "phpfastcache/phpfastcache": "8.0.4",
     "egorbaklach/contracts": "1.2",
-    "egorbaklach/molecule": "1.2",
+    "egorbaklach/molecule": "1.3",
     "symfony/console": "5.2.5",
     "ext-pdo": "*"
   },
